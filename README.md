@@ -19,11 +19,10 @@ how to successfully compile and run? <br/>
 2.) Add system calls in system calls table. It depends on your machine's archtecture. <br/>
     [Add accordingly](http://lxr.free-electrons.com/source/arch/x86/syscalls/syscall_64.tbl)
     e.g  path : linux-3.11.1/arch/x86/syscalls/syscall_64.tbl <br/>
-3.) Move mbox.h header file in linux-3.11.1/include/linux or figure out how to add dependencies in Makefile <br/>
-4.) Have your files in subfolder under linux-3.11.1 folder. <br/>
-5.) Add your sub-folder on line "core-y := /usr" in main make file for linux source. e.g My make file and source files  for this project are  contained in kernel_mail_box folder under linux-3.11.1, so for me it is 
+3.) Have your files in subfolder under linux-3.11.1 folder. <br/>
+4.) Add your sub-folder on line "core-y := /usr" in main make file for linux source. e.g My make file and source files  for this project are  contained in kernel_mail_box folder under linux-3.11.1, so for me it is 
 "core-y := /usr /kernel_mail_box" <br/>
-6.) Enter into your extracted kernel directory from terminal. Follow below steps <br/>
+5.) Enter into your extracted kernel directory from terminal. Follow below steps <br/>
     1.) dave@ubuntu:~$ cd Documents/linux-3.11.1 <br/>
     2.) dave@ubuntu:~/Documents/linux-3.11.1$ make <br/>
     3.) dave@ubuntu:~/Documents/linux-3.11.1$ make install <br/>
