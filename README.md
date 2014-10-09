@@ -28,11 +28,13 @@ how to successfully compile and run? <br/>
     3.) dave@ubuntu:~/Documents/linux-3.11.1$ make install <br/>
 
 make will take a while so be patient. if you really want to expedite your compilation, Compiler cache (ccache) is a very nice technology for that. The below link is an excellent tutorial from intel. <br/>
-[cache](https://software.intel.com/en-us/articles/accelerating-compilation-part-1-ccache) <br/>
+[ccache](https://software.intel.com/en-us/articles/accelerating-compilation-part-1-ccache) <br/>
 
 **Future Plans** <br/>
-1.) Reading paper on asynchornous system calls and intend to convert current system calls in async system calls. <br/>
-2.) Improve locking in system call. <br/>
+1.) Need to change all locks to read/write locks from mutex locks.<br/> 
+2.) Reading about unblocking data structures, lets see if that can help removing locks.
+3.) Reading paper on asynchornous system calls and intend to convert current system calls in async system calls. <br/>
+4.) Improve locking in system call. <br/>
 Currently while reading or writing, system call(s) get lock on all mailboxes which is not efficient. I am trying to figure out a way so that locks only apply on mailbox(s) under reading or writing process. <br/>
 
 Any insights or contribution are always appreciated.
