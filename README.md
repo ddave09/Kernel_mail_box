@@ -32,9 +32,9 @@ make will take a while so be patient. if you really want to expedite your compil
 
 **Future Plans** <br/>
 1.) Need to change all locks to read/write locks from mutex locks.<br/> 
-2.) Reading about unblocking data structures, lets see if that can help removing locks.
+2.) Reading about unblocking data structures, lets see if that can help removing locks.<br/>
 3.) Reading paper on asynchornous system calls and intend to convert current system calls in async system calls. <br/>
 4.) Improve locking in system call. <br/>
 Currently while reading or writing, system call(s) get lock on all mailboxes which is not efficient. I am trying to figure out a way so that locks only apply on mailbox(s) under reading or writing process. <br/>
 
-Any insights or contribution are always appreciated.
+Any insights or contributions are appreciated.
