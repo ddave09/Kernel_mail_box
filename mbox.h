@@ -1,5 +1,5 @@
-#ifndef __mbox
-#define __mbox
+#ifndef __MBOX
+#define __MBOX
 #define MAX_MAILBOX 256
 
 extern unsigned long existing_mailboxes;
