@@ -37,4 +37,4 @@ make will take a while so be patient. if you really want to expedite your compil
 4.) Improve locking in system call. <br/>
 Currently while reading or writing, system call(s) get lock on all mailboxes which is not efficient. I am trying to figure out a way so that locks only apply on mailbox(s) under reading or writing process. <br/>
 
-Any insights or contributions are appreciated.
+insights or contributions are appreciated.
